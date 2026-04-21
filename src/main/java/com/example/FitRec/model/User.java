@@ -16,6 +16,17 @@ public class User {
     private Long id;
 
     private String name;
-    private String email;
     private int age;
+    private String password;
+    private String gender;
+    private String occasion;
+
+    @Column(name = "style_preferences")
+    private String stylePreferences;
+
+    @Column(name = "body_type")
+    private String bodyType;
+
+    @Column(unique = true)
+    private String email;
 }

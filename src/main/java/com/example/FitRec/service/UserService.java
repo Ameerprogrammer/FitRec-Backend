@@ -35,4 +35,13 @@ public class UserService {
         logger.info("Deleting user with ID: {}", id);
         userRepository.deleteById(id);
     }
+
+    public User findByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
+    public User getUserById(Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
 }
