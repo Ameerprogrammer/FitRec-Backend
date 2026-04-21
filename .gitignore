@@ -1,1 +1,49 @@
+# =========================
+# JAVA / SPRING BOOT
+# =========================
+target/
+build/
+out/
+
+# =========================
+# IDE FILES
+# =========================
 *.iml
+.idea/
+*.iws
+*.ipr
+.vscode/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOGS
+# =========================
+*.log
+logs/
+
+# =========================
+# ENV / SECRETS (CRITICAL)
+# =========================
+.env
+.env.*
+application.properties
+application.yml
+application-*.properties
+
+# =========================
+# DATABASE / LOCAL FILES
+# =========================
+*.db
+*.sqlite
+*.sql
+
+# =========================
+# TEMP FILES
+# =========================
+*.tmp
+*.swp
